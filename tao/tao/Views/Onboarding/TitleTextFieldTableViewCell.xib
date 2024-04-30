@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20017"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TitleTextFieldTableViewCell" rowHeight="95" id="KGk-i7-Jjw" customClass="TitleTextFieldTableViewCell" customModule="tao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfP-cW-lWQ">
+                        <rect key="frame" x="20" y="10" width="319" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="eJZ-CF-G7R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="dvdvdfv" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YbQ-As-hre">
+                        <rect key="frame" x="20" y="38" width="319" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="eQD-ng-G09"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="TAO_LightGray"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YbQ-As-hre" firstAttribute="top" secondItem="WfP-cW-lWQ" secondAttribute="bottom" constant="12" id="0ik-Ho-3Y0"/>
+                    <constraint firstAttribute="trailing" secondItem="YbQ-As-hre" secondAttribute="trailing" constant="20" id="4cf-Pt-i2A"/>
+                    <constraint firstItem="WfP-cW-lWQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BGp-Os-cWr"/>
+                    <constraint firstAttribute="bottom" secondItem="YbQ-As-hre" secondAttribute="bottom" constant="10" id="Ldy-pv-dlt"/>
+                    <constraint firstAttribute="trailing" secondItem="WfP-cW-lWQ" secondAttribute="trailing" constant="20" id="TEi-4w-WPe"/>
+                    <constraint firstItem="YbQ-As-hre" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Wkd-cb-8I4"/>
+                    <constraint firstItem="WfP-cW-lWQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="i3Y-0a-9YH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textField" destination="YbQ-As-hre" id="Zsg-Cc-GbW"/>
+                <outlet property="title_lbl" destination="WfP-cW-lWQ" id="RHZ-3P-OdX"/>
+            </connections>
+            <point key="canvasLocation" x="165.94202898550725" y="90.066964285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TAO_LightGray">
+            <color red="0.75294117647058822" green="0.75294117647058822" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

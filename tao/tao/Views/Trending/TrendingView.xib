@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrendingView" customModule="tao" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="jwo-pl-Qhn" id="wj4-Mb-wh9"/>
+                <outlet property="desc_lbl" destination="qgY-qy-PuX" id="bGS-1x-5ID"/>
+                <outlet property="imageView" destination="oia-MH-pw7" id="qwG-xK-26G"/>
+                <outlet property="imgView" destination="NtO-WE-mZi" id="cac-JX-fQ1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwo-pl-Qhn">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtO-WE-mZi">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DK" translatesAutoresizingMaskIntoConstraints="NO" id="oia-MH-pw7">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="oia-MH-pw7" secondAttribute="trailing" id="M5l-qd-O5h"/>
+                                <constraint firstAttribute="width" secondItem="NtO-WE-mZi" secondAttribute="height" multiplier="1:1" id="Mda-eQ-nTo"/>
+                                <constraint firstItem="oia-MH-pw7" firstAttribute="leading" secondItem="NtO-WE-mZi" secondAttribute="leading" id="Ovv-F1-hyt"/>
+                                <constraint firstItem="oia-MH-pw7" firstAttribute="top" secondItem="NtO-WE-mZi" secondAttribute="top" id="WwZ-Pk-QF1"/>
+                                <constraint firstAttribute="bottom" secondItem="oia-MH-pw7" secondAttribute="bottom" id="ZbG-BZ-9cE"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgY-qy-PuX">
+                            <rect key="frame" x="0.0" y="422" width="414" height="392"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="qgY-qy-PuX" firstAttribute="leading" secondItem="jwo-pl-Qhn" secondAttribute="leading" id="01o-NO-igm"/>
+                        <constraint firstItem="NtO-WE-mZi" firstAttribute="leading" secondItem="jwo-pl-Qhn" secondAttribute="leading" id="43o-d8-A09"/>
+                        <constraint firstItem="NtO-WE-mZi" firstAttribute="top" secondItem="jwo-pl-Qhn" secondAttribute="top" id="QSE-ba-ub5"/>
+                        <constraint firstAttribute="bottom" secondItem="qgY-qy-PuX" secondAttribute="bottom" constant="4" id="YA2-hb-bfb"/>
+                        <constraint firstAttribute="trailing" secondItem="NtO-WE-mZi" secondAttribute="trailing" id="aSO-ae-uKU"/>
+                        <constraint firstAttribute="trailing" secondItem="qgY-qy-PuX" secondAttribute="trailing" id="uh5-3l-yVo"/>
+                        <constraint firstItem="qgY-qy-PuX" firstAttribute="top" secondItem="NtO-WE-mZi" secondAttribute="bottom" constant="8" id="zMW-XB-AlL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jwo-pl-Qhn" secondAttribute="trailing" id="BD8-bq-kyu"/>
+                <constraint firstItem="jwo-pl-Qhn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PmQ-Wt-deR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jwo-pl-Qhn" secondAttribute="bottom" id="TR7-mO-ksf"/>
+                <constraint firstItem="jwo-pl-Qhn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b2h-wH-lqc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="60"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DK" width="40" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

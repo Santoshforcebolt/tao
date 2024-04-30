@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CompetitionInfoTableViewCell" rowHeight="168" id="KGk-i7-Jjw" customClass="CompetitionInfoTableViewCell" customModule="tao" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_info" translatesAutoresizingMaskIntoConstraints="NO" id="8sj-NJ-qPg">
+                        <rect key="frame" x="16" y="12" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="bqo-xx-wIR"/>
+                            <constraint firstAttribute="width" constant="16" id="eks-Ls-vQn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQq-xV-YGb">
+                        <rect key="frame" x="40" y="10" width="365" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="nvj-hq-JEg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zw-ne-kLj">
+                        <rect key="frame" x="16" y="40" width="383" height="118"/>
+                        <string key="text">Reward amount will be credited to your Tao wallet after the competetion.
+Leaderboard position are live and our subjected to change.
+You can buy products using reward coin on Tao
+Store.</string>
+                        <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8Zw-ne-kLj" secondAttribute="bottom" constant="10" id="53q-sI-FS6"/>
+                    <constraint firstItem="8Zw-ne-kLj" firstAttribute="top" secondItem="KQq-xV-YGb" secondAttribute="bottom" constant="10" id="6Du-Qv-1DD"/>
+                    <constraint firstItem="KQq-xV-YGb" firstAttribute="leading" secondItem="8sj-NJ-qPg" secondAttribute="trailing" constant="8" id="HOg-pX-i9W"/>
+                    <constraint firstItem="8sj-NJ-qPg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SCf-4h-hKK"/>
+                    <constraint firstAttribute="trailing" secondItem="KQq-xV-YGb" secondAttribute="trailing" constant="10" id="XEd-Ht-4cE"/>
+                    <constraint firstItem="8sj-NJ-qPg" firstAttribute="centerY" secondItem="KQq-xV-YGb" secondAttribute="centerY" id="fBL-iD-5qA"/>
+                    <constraint firstItem="8Zw-ne-kLj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="heL-XF-Ykf"/>
+                    <constraint firstAttribute="trailing" secondItem="8Zw-ne-kLj" secondAttribute="trailing" constant="16" id="isx-Pg-ldS"/>
+                    <constraint firstItem="KQq-xV-YGb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="w35-51-seA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="info_lbl" destination="8Zw-ne-kLj" id="k1v-14-nh8"/>
+                <outlet property="title_lbl" destination="KQq-xV-YGb" id="2y4-PH-UPv"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_info" width="24" height="24"/>
+    </resources>
+</document>

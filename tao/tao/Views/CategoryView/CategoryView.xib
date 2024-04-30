@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryView" customModule="tao" customModuleProvider="target">
+            <connections>
+                <outlet property="image_view" destination="FE5-gt-krX" id="E9i-ik-nvt"/>
+                <outlet property="title_lbl" destination="hjM-aq-eXP" id="snO-Pg-6RJ"/>
+                <outlet property="view" destination="KtK-FQ-Mn2" id="p7Z-nv-mYF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtK-FQ-Mn2">
+                    <rect key="frame" x="0.0" y="0.0" width="279" height="267"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notify" translatesAutoresizingMaskIntoConstraints="NO" id="FE5-gt-krX">
+                            <rect key="frame" x="0.0" y="0.0" width="279" height="267"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hjM-aq-eXP">
+                            <rect key="frame" x="4" y="245" width="271" height="17"/>
+                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                            <color key="textColor" name="TAO_White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hjM-aq-eXP" firstAttribute="centerX" secondItem="FE5-gt-krX" secondAttribute="centerX" id="8x8-uy-9o6"/>
+                        <constraint firstItem="FE5-gt-krX" firstAttribute="top" secondItem="KtK-FQ-Mn2" secondAttribute="top" id="Ivy-TT-P4f"/>
+                        <constraint firstAttribute="trailing" secondItem="hjM-aq-eXP" secondAttribute="trailing" constant="4" id="MnR-i4-NmJ"/>
+                        <constraint firstAttribute="bottom" secondItem="FE5-gt-krX" secondAttribute="bottom" id="Qvj-JY-qfF"/>
+                        <constraint firstAttribute="trailing" secondItem="FE5-gt-krX" secondAttribute="trailing" id="RKb-Ps-gfV"/>
+                        <constraint firstItem="hjM-aq-eXP" firstAttribute="leading" secondItem="KtK-FQ-Mn2" secondAttribute="leading" constant="4" id="Uqh-th-Zyg"/>
+                        <constraint firstAttribute="bottom" secondItem="hjM-aq-eXP" secondAttribute="bottom" constant="5" id="ikd-9j-iKU"/>
+                        <constraint firstItem="FE5-gt-krX" firstAttribute="leading" secondItem="KtK-FQ-Mn2" secondAttribute="leading" id="qs5-Bt-GuL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KtK-FQ-Mn2" secondAttribute="bottom" id="QwH-iD-xeu"/>
+                <constraint firstItem="KtK-FQ-Mn2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gGa-00-uK9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KtK-FQ-Mn2" secondAttribute="trailing" id="hia-59-PL1"/>
+                <constraint firstItem="KtK-FQ-Mn2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zL6-sr-XxB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-65.94202898550725" y="-151.22282608695653"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="notify" width="36" height="36"/>
+        <namedColor name="TAO_White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

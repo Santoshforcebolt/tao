@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.6.1)
+  - CHIPageControl/Jalapeno (0.2)
+  - FloatingPanel (2.5.2)
+  - IQKeyboardManagerSwift (6.5.10)
+  - razorpay-pod (1.2.5)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - CHIPageControl/Jalapeno
+  - FloatingPanel
+  - IQKeyboardManagerSwift
+  - razorpay-pod (= 1.2.5)
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CHIPageControl
+    - FloatingPanel
+    - IQKeyboardManagerSwift
+    - razorpay-pod
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  CHIPageControl: a787bf7205c9b7e7fbfc412be36c5e8636b68f86
+  FloatingPanel: 935712d7a8076630135fbbd47f717700913efef9
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  razorpay-pod: aa2df076ea44baab6cc8296c1ccc715fe2ca818c
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: b3aa80d6c2aa22e63e9f6fb57bd184a52c811e59
+
+COCOAPODS: 1.11.2
